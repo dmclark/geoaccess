@@ -1,0 +1,263 @@
+/*
+* This File: TAB_styles.css
+* Contains all CSS declarations to visually format Accessible Tabs. Contains
+* CSS 1.0 and 2.0 styles and is hidden from 4.0 and older browsers by being
+* imported via the @import method.
+*
+* Version - Accessible Tabs: 1.0
+* By Greg Burghardt
+* greg_burghardt@yahoo.com
+* 
+* Edits for Easy Access Chicago
+* by Charles Pannell
+*/
+
+/* Tab Colors
+*  Non active tab text color when in the visited and non visited states 778
+*  Non active tab background color when in the visited and non visited states ccf
+*  Non active tab's text color in the active, focus, and hover states fff
+*  Non active tab's background color when in the active, focus and hover states 99f
+*  Active tab text color when in the visited and non visited states fff
+*  Active tab background color when in the visited, non visited, active, and hover states AAE
+*  The active tab's BG color when it has the system focus 99f
+*  Borders around the content AAE
+*  The content bottom box for Next and Previous AAE
+*  The content bottom box text links when the link is visited and non visited fff
+*  The content bottom box text links when the link is the link is active, hovered on, or has the system focus fff (underlined)
+*/ 
+
+/* Box width 386px */ 
+
+
+/* The UL element containing the tabs when JavaScript is enabled. */
+.tabbedNavOn {
+ list-style-type: none;
+ font-size:.9em;
+ margin: 0;
+ padding: 0;
+}
+
+/*************** Common styles for both .tabOff and .tabOn *****************/
+
+.tabbedNavOn a {
+ display: block;
+}
+
+.tabbedNavOn a:link,
+.tabbedNavOn a:visited,
+.tabbedNavOn a:hover {
+ text-decoration: none;
+}
+
+.tabbedNavOn a span {
+ display: block;
+/* moved from span span */
+ padding: .2em .2em;
+}
+/*
+.tabbedNavOn a span span {
+ padding: .2em .2em;
+}
+*/
+/*************** End common styles for .tabOff and .tabOn ******************/
+
+/* This class is a tab when it is not active. */
+.tabOff {
+ cursor: pointer;
+ cursor: hand;
+ display: block;
+}
+
+/* Non active Tab text color when in the visited and non visited states. */
+.tabOff:link,
+.tabOff:visited {
+ color: #003;
+/* font-weight: bold; */
+ letter-spacing: .12em;
+}
+
+/* Non active tab background color when in the visited or non
+* visited states. */
+.tabOff:link span,
+.tabOff:visited span {
+ background: #ccf;
+}
+
+/* Non active tab's text color in the active, focus, an hover states. */
+.tabOff:active,
+.tabOff:focus,
+.tabOff:hover {
+ color: #003;
+/* font-weight: bold; */
+ letter-spacing: .12em;
+text-decoration:underline;
+}
+
+/* Non active tab's background color when in the active, focus and hover states. */ 
+.tabOff:active span,
+.tabOff:focus span,
+.tabOff:hover span {
+ background: #99f;
+text-decoration:underline;
+}
+
+/* This class is a tab that is switched "on" */
+.tabOn {
+ cursor: default;
+ display: block;
+}
+
+/* Active tab text color when in the visited and non visited states. */
+.tabOn:link,
+.tabOn:visited,
+.tabOn:active,
+.tabOn:hover {
+ color: #003;
+ /*font-weight: bold;*/
+ letter-spacing: .12em;
+}
+
+/* Active tab background color when in the visited, non visited, active, and hover states. */
+
+.tabOn:link span,
+.tabOn:visited span,
+.tabOn:active span,
+.tabOn:hover span {
+ background: #AAE;
+text-decoration:underline;
+}
+
+/* The active tab when it has the system focus. */
+.tabOn:focus, .tabOn:active {
+ color: #003;
+text-decoration:underline;
+}
+
+/* The active tab's background color when it has the system focus. */
+.tabOn:focus span, .tabOn:active span {
+ background: #99f;
+text-decoration:underline;
+}
+  
+.tabbedNavOn li {
+ float: left;
+ margin-right: 2px;
+ border:1px solid #778;
+ border-bottom: none;
+}
+
+/* Tab boxes when JavaScript is disabled. */
+.tabBox .tabBoxNav {
+ display: none;
+}
+
+/* Hide the tab boxes when they are turned off. */
+.tabBoxOff {
+ display: none;
+}
+
+/* The tab box is switched "on" */
+.tabBoxOn {
+ background-color: #fff;
+ margin-top: -1px;
+ zoom: 1;
+}
+
+/* Padding and borders around the tab content. */
+.tabBoxOn .tabBoxGutter {
+ border: 1px solid #AAE;
+padding: .25em .5em;
+}
+
+/* The tab's bottom text links for Next and Previous */
+.tabBoxOn .tabBoxNav { 
+ background-color: #AAE;
+ display: block;
+ margin: 0;
+ padding: .33em 5px 0 5px;
+}
+
+/* The tab's bottom text links when the link is visited and non visited. */
+.tabBoxOn .tabBoxNav a:link,
+.tabBoxOn .tabBoxNav a:visited {
+ color: #003;
+ text-decoration: none;
+}
+
+/* The tab's bottom text links when the link is active, hovered on, or has
+* the system focus. */
+.tabBoxOn .tabBoxNav a:active,
+.tabBoxOn .tabBoxNav a:hover,
+.tabBoxOn .tabBoxNav a:focus {
+ color: #003;
+ text-decoration: underline;
+}
+
+/* Gap below the tab's bottom links, and the bottom of the tab box. */
+.tabBoxOn .tabBoxNav .tabSpacer {
+ height: .33em;
+}
+
+.tabBoxOn .tabBoxNavLeft {
+ float: left;
+ padding-right: 5px;
+}
+
+.tabBoxOn .tabBoxNavRight {
+ float: right;
+ padding-left: 5px;
+}
+
+/* When JavaScript is disabled, hide the link to jump back to the tabs. */
+.tabOptionsOff {
+ display: none;
+}
+
+/* The link to jump back to the tabs when JavaScript is enabled. */
+.tabOptionsOn {
+ margin: 0;
+}
+
+.tabOptionsOn a {
+ margin: -1.5em 0 0 0;
+ position: absolute;
+ text-align: center;
+ width: 100%;
+}
+
+.tabOptionsOn a:link,
+.tabOptionsOn a:visited {
+ color: #003;
+ z-index: -1;
+}
+
+.tabOptionsOn a:active,
+.tabOptionsOn a:focus,
+.tabOptionsOn a:hover {
+ color: #003;
+ z-index: 1;
+}
+
+/* Spacer DIV under the tabs when JavaScript is disabled. */
+.tabSpacerOff {
+ display: none;
+}
+
+/* Spacer DIV under the tabs when JavaScript is enabled. The 1px font size
+* fixes an IE-Win bug that sizes the height too high in certain cases. */
+.tabSpacerOn {
+ background-color: #AAE;
+ clear: both;
+ font-size: 1px;
+ height: 2px;
+height: 1px;
+ overflow: hidden;
+ width: 386px; /* Width required by Safari and IE5-Mac */
+}
+
+/* The DIV tag that encapsulates one entire tab structure. */
+.tabWrapper {
+ position: relative;
+ width: 386px;
+ z-index: 1;
+}

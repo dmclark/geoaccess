@@ -1,0 +1,277 @@
+.red {
+color:#933;
+}
+
+#side_img {
+margin-top:10px;
+margin-bottom:.9em;
+}
+
+.alt {
+color:#666;
+font-family:"Warnock Pro", "Goudy Old Style",Palatino,"Book Antiqua", Georgia, Times, serif;
+font-style:italic;
+font-weight:400;
+}
+
+#sidebox {
+color:#003;
+background:#dde;
+font-size:.9em;
+border-bottom:1px solid #aae;
+margin:1.5em 0 0 8px;
+padding:.5em;
+}
+
+#footer {
+border-top:1px solid #ccc;
+padding-top:1em;
+}
+
+a:hover,a:focus,a:active {
+color:#003;
+background:#aae;
+text-decoration:none;
+}
+
+a:visited {
+color:#666;
+}
+
+a img {
+background:#fff;
+padding:3px;
+}
+
+a:hover img,a:focus img,a:active img {
+border:2px solid #aae;
+text-decoration:none;
+outline:none;
+padding:1px;
+}
+
+ul.skiplinks,.skiplinks {
+position:absolute;
+top:-9000px;
+left:-9000px;
+z-index:9;
+}
+
+ul.skiplinks a:focus,ul.skiplinks a:active {
+position:absolute;
+top:9000px;
+left:9000px;
+background-color:#aae;
+color:#003;
+font-size:.9em;
+border:1px solid #000;
+width:9em;
+z-index:9;
+outline:none;
+padding:1px 2px;
+}
+
+.listimage {
+margin-left:0;
+padding-left:0;
+list-style:none;
+}
+
+.listimage li {
+padding-left:10px;
+background-image:url(pw_square_bullet.gif);
+background-repeat:no-repeat;
+background-position:0 .6em;
+padding-bottom:.5em;
+}
+
+#site_nav {
+background:#fff;
+margin-left:0;
+margin-bottom:.5em;
+border-bottom:1px solid #778;
+line-height:1.2em;
+font-variant:small-caps;
+letter-spacing:.05em;
+padding:3px 0;
+}
+
+#site_nav ul {
+margin:0;
+}
+
+#site_nav li {
+list-style:none;
+display:inline;
+margin:0;
+}
+
+#site_nav li a {
+margin-left:3px;
+border:1px solid #778;
+background:#DDE;
+text-decoration:none;
+padding:3px .2em;
+}
+
+#site_nav li a:hover,#site_nav li a:focus,#site_nav li a:active {
+color:#003;
+background:#AAE;
+text-decoration:underline;
+outline-style:none;
+}
+
+#site_nav li a#main_current {
+color:#003;
+background:#AAE;
+}
+
+#page_nav {
+margin:.5em 0 0 8px;
+}
+
+input {
+border:1px solid #bbb;
+background:#f6f6f6;
+padding:2px;
+}
+
+textarea {
+border:1px solid #bbb;
+background:#f6f6f6;
+height:175px;
+}
+
+input:focus,textarea:focus {
+background:#aae;
+padding:2px;
+}
+
+div.synopsis p {
+margin-left:30px;
+}
+
+h3.synopsis {
+line-height:1.5em;
+padding-left:5px;
+background-color:#eea;
+}
+
+div.synopsis2 {
+margin-top:1em;
+margin-bottom:0;
+border-bottom:1px dotted #aae;
+}
+
+h3.label_checkbox_pair {
+margin-bottom:.5em;
+font-size:1em;
+background-color:#eea;
+padding:2px;
+}
+
+div.label_checkbox_pair {
+margin-bottom:.4em;
+}
+
+p.label_checkbox_pair {
+margin-top:0;
+margin-bottom:0;
+clear:both;
+float:none;
+position:relative;
+}
+
+p.label_checkbox_pair input {
+left:10px;
+position:absolute;
+}
+
+p.label_checkbox_pair input:active,p.label_checkbox_pair input:focus {
+outline:red solid thin;
+}
+
+p.label_checkbox_pair label {
+display:block;
+margin-left:35px;
+font-size:.9em;
+font-weight:400;
+}
+
+.searchdata h4 {
+border-top:1px dotted #aae;
+padding-top:.2em;
+margin:.1em 0;
+}
+
+.searchdata ul {
+margin-bottom:.7em;
+margin-left:0;
+padding-left:0;
+list-style:none;
+}
+
+.searchdata li {
+padding-left:15px;
+background-image:url(pw_dot.gif);
+background-repeat:no-repeat;
+background-position:0 .6em;
+padding-bottom:0;
+margin-bottom:0;
+}
+
+#section_nav ul,#page_nav ul {
+list-style-type:none;
+margin:0;
+padding:0;
+}
+
+#section_nav li,#page_nav li {
+font-size:.95em;
+margin:0 0 1px;
+}
+
+#section_nav a,#page_nav a {
+background-color:#AAE;
+color:#003;
+display:block;
+line-height:1.2em;
+text-decoration:none;
+width:159px;
+padding:5px 10px;
+}
+
+#section_nav .current,#page_nav .current {
+border-bottom:1px solid #FFF;
+font-variant:small-caps;
+letter-spacing:.15em;
+text-decoration:none;
+}
+
+#section_nav .subcurrent,#page_nav .subcurrent {
+background-color:#AAE;
+}
+
+#section_nav ul ul li,#page_nav ul ul li {
+margin:0 0 1px;
+}
+
+#section_nav ul ul a,#page_nav ul ul a {
+background-color:#DDE;
+color:#003;
+display:block;
+text-decoration:none;
+width:154px;
+padding:5px 5px 5px 20px;
+}
+
+#section_nav ul ul a:visited,#page_nav ul ul a:visited {
+color:#30c;
+text-decoration:none;
+}
+
+#section_nav ul ul a:hover,#section_nav ul ul a:focus,#section_nav ul ul a:active,#page_nav ul ul a:hover,#page_nav ul ul a:focus,#page_nav ul ul a:active {
+background-color:#AAE;
+color:#003;
+text-decoration:underline;
+}
