@@ -1,0 +1,5 @@
+if [[ -n "$rvm_environments_path" && -s "$rvm_environments_path/1.9.2@rails3" ]] ; then
+  . "$rvm_environments_path/1.9.2@rails3"
+else
+  rvm --create use "1.9.2@rails3"
+fi

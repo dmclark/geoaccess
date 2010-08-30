@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.0.0.rc'
+gem 'rails', '3.0.0.rc2'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -14,8 +14,7 @@ gem 'sqlite3-ruby', :require => 'sqlite3'
 # gem 'capistrano'
 
 # To use debugger
-# gem 'ruby-debug'
-
+# gem 'ruby-debug' 
 # Bundle the extra gems:
 # gem 'bj'
 # gem 'nokogiri', '1.4.1'
@@ -35,7 +34,7 @@ group :development do
 end
 
 group :test do
-  gem 'rspec'
+  gem 'rspec', '2.0.0.beta.18'
   gem 'spork'
   gem 'factory_girl_rails', '1.0'
 end
