@@ -5,8 +5,3 @@
 #
 #   cities = City.create([{ :name => 'Chicago' }, { :name => 'Copenhagen' }])
 #   Mayor.create(:name => 'Daley', :city => cities.first)
-VenueType.delete_all
-VenueType.create( :name => "Attraction" )
-VenueType.create( :name => "Hotel" )
-VenueType.create( :name => "Museum" )
-VenueType.create( :name => "Nightclub" )
