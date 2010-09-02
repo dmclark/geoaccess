@@ -5,3 +5,11 @@
 #
 #   cities = City.create([{ :name => 'Chicago' }, { :name => 'Copenhagen' }])
 #   Mayor.create(:name => 'Daley', :city => cities.first)
+Ventype.delete_all
+Ventype.create( :name => "Attraction" )
+Ventype.create( :name => "Hotel" )
+Ventype.create( :name => "Museum" )
+Ventype.create( :name => "Nightclub" )
+Ventype.create( :name => "Resturaunt" )
+Ventype.create( :name => "Sport Venue" )
+Ventype.create( :name => "Theatre" )

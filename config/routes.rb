@@ -1,4 +1,6 @@
 Geoaccess::Application.routes.draw do
+  resources :venues
+
   match '/about',   :to => "pages#about"
   
   root :to => 'pages#home'
