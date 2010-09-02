@@ -41,7 +41,7 @@
   </div>
   <div class="field">
     <%= f.label :ventype_id %><br />
-    <%= f.text_field :ventype_id %>
+    <%= f.select(:ventype_id, options_from_collection_for_select(ventypes, 'id', 'name', 1) )  %>
   </div>
   <div class="actions">
     <%= f.submit %>
