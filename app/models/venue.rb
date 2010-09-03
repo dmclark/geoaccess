@@ -17,5 +17,6 @@
 #
 
 class Venue < ActiveRecord::Base
+  attr_accessible :name
   belongs_to :ventype, :class_name => "Ventype", :foreign_key => "ventype_id"
 end
