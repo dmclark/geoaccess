@@ -1,7 +1,7 @@
 # == Schema Information
-# Schema version: 20100902165058
+# Schema version: 20100906134036
 #
-# Table name: ventypes
+# Table name: neighborhoods
 #
 #  id         :integer         not null, primary key
 #  name       :string(255)
@@ -9,10 +9,9 @@
 #  updated_at :datetime
 #
 
-class Ventype < ActiveRecord::Base
+class Neighborhood < ActiveRecord::Base
   has_many :venues
   
   validates :name, :uniqueness => { :case_sensitive => false } 
   
 end
-

@@ -10,7 +10,13 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100902165058) do
+ActiveRecord::Schema.define(:version => 20100906134036) do
+
+  create_table "neighborhoods", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "ventypes", :force => true do |t|
     t.string   "name"
@@ -29,6 +35,14 @@ ActiveRecord::Schema.define(:version => 20100902165058) do
     t.integer  "ventype_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "phone"
+    t.text     "description"
+    t.text     "info_html"
+    t.text     "deaf_access"
+    t.text     "blind_access"
+    t.text     "mobility_access"
+    t.text     "restroom_access"
+    t.integer  "neighborhood_id"
   end
 
 end
