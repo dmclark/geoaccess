@@ -1,8 +1,6 @@
 <h1>Listing venues</h1>
 
-<%= render :partial => 'list_venues', :venues => @venues %>
+<%= render :partial => 'list_venues', :locals => { :venues => @venues} %>
 
 
 <br />
-
-<%= link_to 'New Venue', new_venue_path %>
