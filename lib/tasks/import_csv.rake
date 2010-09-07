@@ -22,7 +22,7 @@ require "csv"
           venue.save
         
       end
-      puts "#{CSV.open("db/csv/attractions.csv").count} attractions imported"
+      # puts "#{CSV.open("db/csv/attractions.csv").count} attractions imported"
 
       CSV.foreach("db/csv/hotels.csv") do |hotel| 
           venue = Venue.find_or_initialize_by_name("#{hotel[4]}") 
@@ -42,7 +42,7 @@ require "csv"
           venue.ventype = Ventype.find_or_create_by_name('Hotel') 
           venue.save
       end
-      puts "#{CSV.open("db/csv/hotels.csv").count} hotels imported"
+      # puts "#{CSV.open("db/csv/hotels.csv").count} hotels imported"
    
       CSV.foreach("db/csv/museums.csv") do |museum| 
           venue = Venue.find_or_initialize_by_name("#{museum[2]}") 
@@ -63,7 +63,7 @@ require "csv"
           venue.ventype = Ventype.find_or_create_by_name('Museum') 
           venue.save
       end
-      puts "#{CSV.open("db/csv/museums.csv").count} museums imported"
+      # puts "#{CSV.open("db/csv/museums.csv").count} museums imported"
 
       CSV.foreach("db/csv/nightclubs.csv") do |nightclub| 
           venue = Venue.find_or_initialize_by_name("#{nightclub[2]}") 
@@ -84,7 +84,7 @@ require "csv"
           venue.ventype = Ventype.find_or_create_by_name('Nightclub') 
           venue.save
       end
-      puts "#{CSV.open("db/csv/nightclubs.csv").count} nightclubs imported"
+      # puts "#{CSV.open("db/csv/nightclubs.csv").count} nightclubs imported"
 
     
     
