@@ -60,6 +60,7 @@ GEM
       activesupport (= 3.0.0)
       bundler (~> 1.0.0)
       railties (= 3.0.0)
+    rails-geocoder (0.9.4)
     railties (3.0.0)
       actionpack (= 3.0.0)
       activesupport (= 3.0.0)
@@ -95,6 +96,7 @@ DEPENDENCIES
   annotate-models (= 1.0.4)
   factory_girl_rails (= 1.0)
   rails (= 3.0.0)
+  rails-geocoder
   rspec (= 2.0.0.beta.18)
   rspec-rails (= 2.0.0.beta.18)
   spork
