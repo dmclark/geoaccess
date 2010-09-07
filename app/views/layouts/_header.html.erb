@@ -1,0 +1,5 @@
+<ul>
+	<% neighborhoods.each do |neighborhood| %>
+		<li><%= link_to neighborhood.name, neighborhood_path( :neighborhood_name => neighborhood.name ) %></li>
+	<% end  %>
+</ul>

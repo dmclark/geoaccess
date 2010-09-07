@@ -4,6 +4,10 @@ module ApplicationHelper
     image_tag("logo.png", :alt => "Sample App", :class => "round")
   end
   
+  def neighborhoods
+    Neighborhood.all
+  end
+  
   def title
     base_title = "Geoaccess prototype"
     if @title.nil?

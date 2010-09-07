@@ -1,0 +1,28 @@
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Address</th>
+    <th>City</th>
+    <th>State</th>
+    <th>Zip</th>
+    <th>Url</th>
+    <th>Is active</th>
+    <th>Ventype</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% venues.each do |venue| %>
+  <tr>
+    <td><%= link_to venue.name, venue %></td>
+    <td><%= venue.address %></td>
+    <td><%= venue.city %></td>
+    <td><%= venue.state %></td>
+    <td><%= venue.zip %></td>
+    <td><%= venue.url %></td>
+    <td><%= venue.is_active %></td>
+    <td><%= venue.ventype.name %></td>
+  </tr>
+<% end %>
+</table>

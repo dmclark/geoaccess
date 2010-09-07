@@ -1,4 +1,6 @@
 Geoaccess::Application.routes.draw do
+  resources :neighborhoods
+   match '/neighborhood(/:neighborhood_name)',   :to => "neighborhood#show", :as => :neighborhood
   resources :venues
 
   match '/about',   :to => "pages#about"
