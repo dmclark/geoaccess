@@ -1,6 +1,10 @@
 <h1>Listing venues</h1>
+<% if @venues.any? %>
+	
+<%= draw_map_of @venues.first, :class => "showmap"  %>
 
-<%= render :partial => 'list_venues', :locals => { :venues => @venues} %>
+<% end %>
+<% # render :partial => 'list_venues', :locals => { :venues => @venues} %>
 
 
 <br />

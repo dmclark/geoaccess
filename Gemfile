@@ -9,6 +9,7 @@ gem 'sqlite3-ruby', :require => 'sqlite3'
 gem "rails-geocoder", :require => "geocoder"
 gem 'pg'
 gem 'geokit'
+gem 'jquery-rails'
 gem 'rails-geocoder'
 gem 'geokit-rails'
 
