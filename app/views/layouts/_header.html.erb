@@ -3,9 +3,3 @@
 		<li><%= link_to neighborhood.name, neighborhood_path( :neighborhood_name => neighborhood.name ) %></li>
 	<% end  %>
 </ul>
-
-<% if @venues.any? %>
-	
-<%= draw_map_of @venues.first, :class => "showmap"  %>
-
-<% end %>
