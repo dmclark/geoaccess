@@ -40,3 +40,7 @@ module Geoaccess
     config.filter_parameters += [:password]
   end
 end
+
+module GoogleDirections
+  GOOGLE_MAPS_API_KEY = "ABQIAAAANDHZ1aASm54goSQenBPsqhQIaJurICCye184MIBWpDCLTjpviRQJwzom-3TTotxWPiU660mRi2cwsQ"
+end  

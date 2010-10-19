@@ -12,7 +12,7 @@ gem 'geokit'
 gem 'jquery-rails'
 gem 'rails-geocoder'
 gem 'geokit-rails'
-
+gem 'google_directions'
 
 # Use unicorn as the web server
 # gem 'unicorn'
