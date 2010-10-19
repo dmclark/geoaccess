@@ -1,11 +1,13 @@
 Geoaccess::Application.routes.draw do
+  resources :directions
+
   resources :neighborhoods
    match '/neighborhood(/:neighborhood_name)',   :to => "neighborhood#show", :as => :neighborhood
   resources :venues
 
   match '/about',   :to => "pages#about"
   
-  root :to => 'pages#home'
+  root :to => 'directions#new'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

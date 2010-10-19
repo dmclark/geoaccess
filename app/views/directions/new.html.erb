@@ -1,0 +1,22 @@
+<h1>Get directions</h1>
+
+<p>Please select a starting point and ending point from the lists below.</p>
+
+<%= form_for @direction do |f| %>
+  <div class="field">
+    <%= f.label :startpoint %><br />
+    <%= f.select :startpoint, options_from_collection_for_select(@venues, 'id', 'name'), { :include_blank => true } %>
+  </div>
+  <div class="field">
+    <%= f.label :endpoint %><br />
+    <%= f.select :endpoint, options_from_collection_for_select(@venues, 'id', 'name'), { :include_blank => true, :size => 15  } %>
+  </div>
+  <div class="field">
+    <%= f.label :mode %><br />
+    <%= f.text_field :mode %>
+  </div>
+  
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
