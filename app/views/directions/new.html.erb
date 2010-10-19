@@ -13,7 +13,8 @@
   </div>
   <div class="field">
     <%= f.label :mode %><br />
-    <%= f.text_field :mode %>
+    <%= f.radio_button :mode, "Walking" %> Walking
+    <%= f.radio_button :mode, "Public Trans" %> Public trans
   </div>
   
   <div class="actions">
