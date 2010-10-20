@@ -9,16 +9,17 @@ class DirectionsController < ApplicationController
     if @direction.valid?  
       # TODO send direction here  
       flash[:notice] = "go"  
-      render :action => 'show'    
+      redirect_to get_directions_path( params[:direction][:startpoint],
+                 params[:direction][:endpoint]  )    
     else  
       render :action => 'new'  
     end  
   end
   
   def show
-    start = Venue.find(params[:startpoint]).location
-    destination = Venue.find(params[:endpoint]).location
-    @directions = GoogleDirections.new(start,destination).xml
+    start = Venue.find(params[:start]).location
+    destination = Venue.find(params[:destination]).location
+    @directions = GoogleDirections.new(start,destination).xml + 'xxxxxxxx'
   end
   
 
