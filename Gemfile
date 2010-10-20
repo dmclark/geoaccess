@@ -12,7 +12,7 @@ gem 'geokit'
 gem 'jquery-rails'
 gem 'rails-geocoder'
 gem 'geokit-rails'
-gem 'google_directions'
+gem 'google_directions', '0.1.4',:git => 'git://github.com/dmclark/google-directions-ruby.git'
 
 # Use unicorn as the web server
 # gem 'unicorn'
