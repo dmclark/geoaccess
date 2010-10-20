@@ -14,5 +14,12 @@ class DirectionsController < ApplicationController
       render :action => 'new'  
     end  
   end
+  
+  def show
+    start = Venue.find(params[:startpoint]).location
+    destination = Venue.find(params[:endpoint]).location
+    @directions = GoogleDirections.new(start,destination).xml
+  end
+  
 
 end
