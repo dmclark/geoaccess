@@ -37,8 +37,8 @@ class Venue < ActiveRecord::Base
                    :distance_field_name => :distance,
                    :lat_column_name => :latitude,
                    :lng_column_name => :longitude
-                   
-                   
+  default_scope :order => 'name  ASC'
+  
   def cleanaddress
     self.address.gsub(/\s[(].*[)]/ , '')
   end

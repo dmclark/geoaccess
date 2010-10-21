@@ -5,11 +5,11 @@
 <%= form_for @direction do |f| %>
   <div class="field">
     <%= f.label :startpoint %><br />
-    <%= f.select :startpoint, options_from_collection_for_select(@venues, 'id', 'name'), { :include_blank => true } %>
+    <%= f.select :startpoint, options_from_collection_for_select(@venues, 'id', 'name'), { :include_blank => true }, { :size => 15  } %>
   </div>
   <div class="field">
     <%= f.label :endpoint %><br />
-    <%= f.select :endpoint, options_from_collection_for_select(@venues, 'id', 'name'), { :include_blank => true, :size => 15  } %>
+    <%= f.select :endpoint, options_from_collection_for_select(@venues, 'id', 'name'), { :include_blank => true}, { :size => 15  } %>
   </div>
   <div class="field">
     <%= f.label :mode %><br />
