@@ -1,2 +1,7 @@
-<h1>Directions#show</h1>
-<p><%= @directions %></p>
+<h1>Directions</h1>
+<p>To go from <%= @start %> to <%= @destination %></p>
+<ul>
+	<% @directions.xpath('//html_instructions').each do |step| %>
+		<li><%= step.text.html_safe %></li>
+	<% end %>
+</ul>

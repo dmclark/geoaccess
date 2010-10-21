@@ -17,9 +17,9 @@ class DirectionsController < ApplicationController
   end
   
   def show
-    start = Venue.find(params[:start]).location
-    destination = Venue.find(params[:destination]).location
-    xml = GoogleDirections.new(start,destination).xml
+    @start = Venue.find(params[:start]).location
+    @destination = Venue.find(params[:destination]).location
+    xml = GoogleDirections.new(@start,@destination).xml
     @directions = Nokogiri::XML(xml)
   end
   
