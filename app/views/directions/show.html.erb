@@ -1,7 +1,8 @@
 <h1>Directions</h1>
 <p>To go from <%= @start %> to <%= @destination %></p>
-<ul>
-	<% @directions.xpath('//html_instructions').each do |step| %>
-		<li><%= step.text.html_safe %></li>
+<p>Total distance: <%= @total_distance %></p>
+<% @directions.each do |step| %>
+		<h1 class="step"><%= step['description'] %></h1> 
+		<h2 class-"distance"><%= step['distance'] %></h2>
 	<% end %>
-</ul>
+
