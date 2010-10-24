@@ -2,22 +2,6 @@
 
 <p>Please select a starting point and ending point from the lists below.</p>
 
-<%= form_for @direction do |f| %>
-  <div class="field">
-    <%= f.label :startpoint %><br />
-    <%= f.select :startpoint, options_from_collection_for_select(@venues, 'id', 'name'), { :include_blank => false }, { :size => 15  } %>
-  </div>
-  <div class="field">
-    <%= f.label :endpoint %><br />
-    <%= f.select :endpoint, options_from_collection_for_select(@venues, 'id', 'name'), { :include_blank => false }, { :size => 15  } %>
-  </div>
-  <div class="field">
-    <%= f.label :mode %><br />
-    <%= f.radio_button :mode, "walking" %> <%= f.label "mode_walking", "Walking Directions"%>
-    <%= f.radio_button :mode, "pubtrans" %> <%= f.label "mode_pubtrans", "Via Public Transportation"%>
-  </div>
-  
-  <div class="actions">
-    <%= f.submit "Get Directions" %>
-  </div>
-<% end %>
+<%= render :partial => 'form' %>
+
+	<div id="directions"></div>

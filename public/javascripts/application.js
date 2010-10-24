@@ -1,3 +1,10 @@
-// Place your application-specific JavaScript functions and classes here
-// This file is automatically included by javascript_include_tag :defaults
+$(function() {
+	if ($('#directions').length > 0) {
+		getdirections;
+	};
+})
+
+function getdirections() {
+	$.getscript("/directions/create.js")
+}
 

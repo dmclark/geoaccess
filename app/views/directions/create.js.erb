@@ -1,0 +1,4 @@
+<% unless @directions.nil? %>
+	alert("stil here");
+	$("#directions").text("<%=raw escape_javascript(render('directions/directions/' + startpoint + "/" + endpoint)) %>");
+<% end %>
