@@ -14,11 +14,11 @@ class DirectionsController < ApplicationController
         else
           render :action => 'new'
         end
-      end
       format.js do
         # assuming @direction to_json returns a json object with a list of travel directions
-        # render :json => @direction.to_json
+        render { render :action => 'create', :layout => false }
       end
+    end
     end
   end
   
