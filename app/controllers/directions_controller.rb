@@ -1,4 +1,6 @@
 class DirectionsController < ApplicationController
+    respond_to :html, :js
+    
   def new
     @direction = Direction.new
     @venues = Venue.all
