@@ -10,10 +10,17 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100907141647) do
+ActiveRecord::Schema.define(:version => 20101026152210) do
 
   create_table "neighborhoods", :force => true do |t|
     t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "routes", :force => true do |t|
+    t.integer  "startpoint_id"
+    t.integer  "endpoint_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

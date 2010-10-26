@@ -1,11 +1,11 @@
-<%= form_for @direction, :remote => true  do |f| %>
+<%= form_for Route, :remote => true  do |f| %>
   <div class="field">
-    <%= f.label :startpoint %><br />
-    <%= f.select :startpoint, options_from_collection_for_select(@venues, 'id', 'name'), { :include_blank => false }, { :size => 15  } %>
+    <%= f.label :startpoint_id %><br />
+    <%= f.select :startpoint_id, options_from_collection_for_select(@venues, 'id', 'name'), { :include_blank => false }, { :size => 15  } %>
   </div>
   <div class="field">
-    <%= f.label :endpoint %><br />
-    <%= f.select :endpoint, options_from_collection_for_select(@venues, 'id', 'name'), { :include_blank => false }, { :size => 15  } %>
+    <%= f.label :endpoint_id %><br />
+    <%= f.select :endpoint_id, options_from_collection_for_select(@venues, 'id', 'name'), { :include_blank => false }, { :size => 15  } %>
   </div>
   <div class="field">
     <%= f.label :mode %><br />
