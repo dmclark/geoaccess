@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20101026152210) do
+ActiveRecord::Schema.define(:version => 20101027214236) do
 
   create_table "neighborhoods", :force => true do |t|
     t.string   "name"
@@ -23,6 +23,7 @@ ActiveRecord::Schema.define(:version => 20101026152210) do
     t.integer  "endpoint_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "mode"
   end
 
   create_table "ventypes", :force => true do |t|

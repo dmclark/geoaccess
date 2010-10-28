@@ -1,4 +1,4 @@
-<%= form_for Route, :remote => true  do |f| %>
+<%= form_for @route, :remote => true  do |f| %>
   <div class="field">
     <%= f.label :startpoint_id %><br />
     <%= f.select :startpoint_id, options_from_collection_for_select(@venues, 'id', 'name'), { :include_blank => false }, { :size => 15  } %>
@@ -15,5 +15,6 @@
   
   <div class="actions">
     <%= f.submit "Get Directions" %>
+    <%= button_to "Clear", new_route_path  %>
   </div>
 <% end %>

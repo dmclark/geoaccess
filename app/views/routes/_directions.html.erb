@@ -1,8 +1,8 @@
-<% if @directions %>
+<% if @route %>
 		<h1>Directions</h1>
-		<p>To go from <%= @start %> to <%= @destination %></p>
+		<p>To go from <%= @route.startpoint.name %> (<%= @route.startpoint.location %>) to <%= @route.endpoint.name %> (<%= @route.endpoint.location %>)</p>
 		<p>Total distance: <%= @total_distance %></p>
-		<% @directions.each do |step| %>
+		<% @route.directions.each do |step| %>
 				<h1 class="step"><%= step['description'] %></h1> 
 				<h2 class-"distance"><%= step['distance'] %></h2>
 			<% end %>
