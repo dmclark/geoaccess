@@ -7,37 +7,18 @@
 
 <p>
   <b>Address:</b>
-  <%= @venue.address %>
-</p>
-
-<p>
-  <b>City:</b>
-  <%= @venue.city %>
-</p>
-
-<p>
-  <b>State:</b>
-  <%= @venue.state %>
-</p>
-
-<p>
-  <b>Zip:</b>
-  <%= @venue.zip %>
+  <%= @venue.location %>
 </p>
 
 <p>
   <b>Url:</b>
-  <%= @venue.url %>
+  <%= link_to @venue.url, @venue.url %>
 </p>
 
-<p>
-  <b>Is active:</b>
-  <%= @venue.is_active %>
-</p>
 
 <p>
   <b>Ventype:</b>
-  <%= @venue.ventype_id %>
+  <%= @venue.ventype.name %>
 </p>
 
 

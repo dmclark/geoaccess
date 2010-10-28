@@ -17,6 +17,11 @@ class Route < ActiveRecord::Base
         end 
   end
   
+  def distance
+    Nokogiri::XML(parsed_xml).xpath('/DirectionsResponse/route/leg/distance/text').text.html_safe
+  end
+  
+  
   def parsed_xml
     GoogleDirections.new(startpoint.location, endpoint.location).xml
   end
