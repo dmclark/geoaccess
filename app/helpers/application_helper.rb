@@ -7,6 +7,12 @@ module ApplicationHelper
   def neighborhoods
     Neighborhood.all
   end
+
+  def autolink( url, string=nil)
+    output = string.nil? ? "<a href=\"http://#{url}\">#{url}</a>" : "<a href=\"http://#{url}\">#{string}</a>"
+    output.html_safe
+  end
+  
   
   def title
     base_title = "Geoaccess prototype"

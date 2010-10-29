@@ -3,13 +3,9 @@
     <th>Name</th>
     <th>Address</th>
     <th>Location</th>
-    <th>Geocode</th>
     <th>Url</th>
     <th>Is active</th>
     <th>Ventype</th>
-    <th></th>
-    <th></th>
-    <th></th>
   </tr>
 
 <% venues.each do |venue| %>
@@ -17,13 +13,9 @@
     <td><%= link_to venue.name, venue %></td>
     <td><%= venue.address %></td>
     <td><%= venue.location %></td>
-    <td>(<%= venue.latitude %>, <%= venue.longitude %>)</td>
-    <td><%= venue.url %></td>
+    <td><%= autolink(venue.url) %></td>
     <td><%= venue.is_active %></td>
     <td><%= venue.ventype.name %></td>
-    <td><%= venue.blind_access.html_safe %></td>
-    <td><%= venue.deaf_access.html_safe %></td>
-    <td><%= venue.mobility_access.html_safe %></td>
   </tr>
 <% end %>
 </table>

@@ -12,7 +12,7 @@
 
 <p>
   <b>Url:</b>
-  <%= link_to @venue.url, @venue.url %>
+  <%= autolink(@venue.url) %>
 </p>
 
 
@@ -22,3 +22,12 @@
 </p>
 
 
+<p>Description</p>
+<%= @venue.description %>
+
+
+<%= @venue.info_html.html_safe %>
+
+<%= @venue.blind_access.html_safe %>
+<%= @venue.deaf_access.html_safe %>
+<%= @venue.mobility_access.html_safe %>
