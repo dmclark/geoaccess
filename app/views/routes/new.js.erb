@@ -1,4 +1,9 @@
+$(function() {
+	$('#route_show').click(function(){
+		$('#directions').html('<%= escape_javascript(render("directions")) %>');
+	})
 
-$('input#route_show').click(function(){
-	$('#directions').html('<%= escape_javascript(render("directions")) %>');
+	$('#route_clear').click(function(){
+		$('#directions').html('');
+	})
 })
