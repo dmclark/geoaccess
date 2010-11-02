@@ -9,6 +9,16 @@ class Route < ActiveRecord::Base
   
   after_create :get_xml
   
+  def as_json
+    base = "http://maps.googleapis.com/maps/api/directions/json?origin="
+    string = base + startpoint.location + "&destination=" + endpoint.location + "&mode=walk&sensor=false"    
+    resp = Net::HTTP.get_response(URI.parse(URI.escape(string)))
+    if resp.inspect.include?('HTTPOK 200 OK')  
+      resp.body
+    end 
+  end
+  
+  
   def directions
      Nokogiri::XML(parsed_xml).xpath('//step').map do |i| 
       {'description' => i.xpath('html_instructions').text.html_safe, 

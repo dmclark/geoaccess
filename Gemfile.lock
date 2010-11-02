@@ -38,6 +38,7 @@ GEM
     arel (1.0.1)
       activesupport (~> 3.0.0)
     builder (2.1.2)
+    crack (0.1.8)
     diff-lcs (1.1.2)
     erubis (2.6.6)
       abstract (>= 1.0.0)
@@ -106,6 +107,7 @@ PLATFORMS
 
 DEPENDENCIES
   annotate-models (= 1.0.4)
+  crack
   factory_girl_rails (= 1.0)
   geokit
   geokit-rails
