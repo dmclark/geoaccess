@@ -79,6 +79,8 @@ GEM
       rake (>= 0.8.4)
       thor (~> 0.14.0)
     rake (0.8.7)
+    rest-client (1.6.1)
+      mime-types (>= 1.16)
     rspec (2.0.0.beta.18)
       rspec-core (= 2.0.0.beta.18)
       rspec-expectations (= 2.0.0.beta.18)
@@ -114,6 +116,7 @@ DEPENDENCIES
   pg
   rails (= 3.0.0)
   rails-geocoder
+  rest-client
   rspec (= 2.0.0.beta.18)
   rspec-rails (= 2.0.0.beta.18)
   spork
