@@ -5,6 +5,7 @@
     <%= csrf_meta_tag %>
 		<%= javascript_include_tag :all %>
     <%= render 'layouts/stylesheets' %>
+		<%= javascript_include_tag "http://maps.google.com/maps/api/js?sensor=false" %>
 		<%= yield :extra_head %>
  </head>
   <body>

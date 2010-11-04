@@ -47,6 +47,11 @@ class Venue < ActiveRecord::Base
     [self.cleanaddress, self.city, self.state].compact.join(', ')
   end
   
+  def latlong
+    [latitude, longitude].join(', ')
+  end
+  
+  
   def group_by_clause
     fields = Array.new
     Venue.columns_hash.each do |column|

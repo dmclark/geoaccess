@@ -6,4 +6,20 @@ $(function() {
 	$('#route_clear').click(function(){
 		$('#directions').html('');
 	})
+	
+	 var latlng = new google.maps.LatLng(<%= escape_javascript(@route.startpoint.latlong) %>);
+    var myOptions = {
+		position:latlng,
+        pov: {
+	        heading: 165,
+	        pitch:0,
+	        zoom:1
+	      }
+    };
+
+
+    var  myPano = new google.maps.StreetViewPanorama(document.getElementById("map"), myOptions);
+	myPano.setVisible(true);
+	
+		
 })
