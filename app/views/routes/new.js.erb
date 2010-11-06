@@ -1,8 +1,5 @@
-$(function() {
-	$('#route_show').click(function(){
-		$('#directions').html('<%= escape_javascript(render("directions")) %>');
-	})
-
+	$('#directions').html('<%= escape_javascript(render("directions")) %>');
+	
 	$('#route_clear').click(function(){
 		$('#directions').html('');
 	})
@@ -21,5 +18,4 @@ $(function() {
     var  myPano = new google.maps.StreetViewPanorama(document.getElementById("map"), myOptions);
 	myPano.setVisible(true);
 	
-		
-})
+	
