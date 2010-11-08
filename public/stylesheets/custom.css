@@ -1,8 +1,39 @@
+/* @override 
+	http://localhost:3000/stylesheets/custom.css?1289229628
+	http://localhost:3000/stylesheets/custom.css?1289232719
+	http://localhost:3000/stylesheets/custom.css
+*/
+
 .gmap {
 	width: 600px;
 	height: 400px;
 }
 
-.step h1 {
+.step h1, .step h2  {
+	font-variant: normal;
 	font-size: 100%;
+	display: inline;
 }
+
+.step h1  {
+	width: 90px;
+}
+
+h2.distance {
+	width: 20%;
+	float: right;
+	display: inline;
+}
+
+#directions div.step {
+	display: block;
+	border: 1px solid black;
+}
+
+
+
+form#tripPlan {
+	display: block;
+	clear: both;
+}
+
