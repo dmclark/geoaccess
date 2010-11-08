@@ -2,3 +2,7 @@
 	width: 600px;
 	height: 400px;
 }
+
+.step h1 {
+	font-size: 100%;
+}

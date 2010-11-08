@@ -1,0 +1,27 @@
+
+		<form name="tripPlan" id="tripPlan" action="http://goroo.com/goroo/showTripPlanResults.htm" method="post"> 
+					<input type="hidden" value="false" id="calendarOpen" name="calendarOpen"/> 
+					<input type="hidden" value="false" id="calendarClick" name="calendarClick"/> 
+
+					<input type="hidden" value="" id="advanced" name="advanced"/> 
+					<input type="hidden" value="yes" id="newTrip" name="newTrip"/> 
+					<input type="hidden" value="true" id="newRequest" name="newRequest"/> 
+					<input type="hidden" value="0" id="trip" name="trip"/> 
+					<input type="hidden" value="" id="dummy" name="dummy"/> 
+					<input type="hidden" id="origAddress" name="origAddress" value="<%= @route.startpoint.location  %>" /> 
+  				<input type="hidden" id="destAddress" name="destAddress" 	value="<%= @route.endpoint.location  %>" /> 
+					<input type="hidden" id="arriveLeave" name="arriveLeave" value="dep" />
+					<input name="travelDate" id="travelDate" type="hidden" value="11/17/10"/>
+					<input type="hidden" name="hour" value="3" id="hour" />
+					<input type="hidden" name="minute" value="00" id="minute" />
+					<input type="hidden" name="ampm" value="pm" id="ampm" />
+					
+					<input type="hidden" id="train" name="train" value="true"/> 
+					<input type="hidden" id="bus" name="bus" value="true"/> 
+					<input type="hidden" id="tripPreference" name="tripPreference" value="LEASTTIME" />
+					<input type="hidden" id="walkPreference" name="walkPreference" value="0.50" /> 
+						<input type="hidden"  id="accessibleRequiredYes" name="accessibleRequired" value="true" /> 
+					<input type="submit" value="Take Me There!" name="takeMeThere" id="takeMeThere" /> 
+					
+					 
+					</form> 
