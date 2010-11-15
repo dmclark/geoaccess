@@ -1,18 +1,20 @@
 <% if @route %>
-		<h1>Directions</h1>
+	<section id="directions">	
+		<header><h1>Directions</h1></header>
+		<div id="directions-info">
 		<p>To go from <%= link_to @route.startpoint.name, @route.startpoint %> (<%= @route.startpoint.location %>) to <%= link_to @route.endpoint.name, @route.endpoint %> (<%= @route.endpoint.location %>)</p>
 		<p>Total distance: <%= @route.distance %></p>
-		<ol>
+		<ol id="steps">
 			
 		<% @route.directions.each do |step| %>
 		<li>
 				<h3 class="desc"><%= step['description'] %></h3> 
-				<h4 class="distance"><%= step['distance'] %></h4>
+				<p class="distance"><%= step['distance'] %></p>
 			
 		</li>
 			<% end %>
 		</ol>
-		
+		</div>		
 <%= render 'goroo' %>
 
 <% else %>
