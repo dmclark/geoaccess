@@ -2,13 +2,16 @@
 		<h1>Directions</h1>
 		<p>To go from <%= link_to @route.startpoint.name, @route.startpoint %> (<%= @route.startpoint.location %>) to <%= link_to @route.endpoint.name, @route.endpoint %> (<%= @route.endpoint.location %>)</p>
 		<p>Total distance: <%= @route.distance %></p>
-		<% @route.directions.each do |step| %>
-		<div class="step">
-				<h1 class="desc"><%= step['description'] %></h1> 
-				<h2 class="distance"><%= step['distance'] %></h2>
+		<ol>
 			
-		</div>
+		<% @route.directions.each do |step| %>
+		<li>
+				<h3 class="desc"><%= step['description'] %></h3> 
+				<h4 class="distance"><%= step['distance'] %></h4>
+			
+		</li>
 			<% end %>
+		</ol>
 		
 <%= render 'goroo' %>
 
