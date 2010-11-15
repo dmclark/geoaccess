@@ -1,5 +1,5 @@
 Geoaccess::Application.routes.draw do
-  resources :routes
+  resource :route
 
   resources :neighborhoods
    match '/neighborhood(/:neighborhood_name)',   :to => "neighborhood#show", :as => :neighborhood
@@ -7,8 +7,7 @@ Geoaccess::Application.routes.draw do
 
   match '/about',   :to => "pages#about"
   
-    match "/directions(/:startpoint_id/:endpoint_id)" => 'routes#create', :as => :get_directions
-  
+  match '/routeit(/[:route][:startpoint]/to/[:route][:endpoint])', :to => 'route#show' 
 
   root :to => 'routes#new'
 

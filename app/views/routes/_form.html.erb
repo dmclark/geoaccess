@@ -1,4 +1,4 @@
-<%= form_for @route, :remote => true  do |f| %>
+<%= form_for @route, :html => {:method => :get}, :url => route_path, :remote => true do |f| -%>
   <div class="field" style="float:left; padding-right:1em">
     <%= f.label :startpoint_id %><br />
     <%= f.select :startpoint_id, options_from_collection_for_select(@venues, 'id', 'name'), { :include_blank => false }, { :size => 15  } %>

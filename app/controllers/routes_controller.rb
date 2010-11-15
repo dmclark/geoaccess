@@ -5,7 +5,7 @@ class RoutesController < ApplicationController
     @venues = Venue.all
   end
 
-  def create
+  def show
     @route = Route.new(params[:route])
     respond_to do |format|
       format.js {render :action => 'new', :layout => false }
