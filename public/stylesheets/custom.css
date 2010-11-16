@@ -5,28 +5,28 @@ h4 {
 font-weight:bold;
 margin:5px 0;
 }
-.gmap {
+.map {
 	width: 600px;
 	height: 400px;
 }
 
-.step h1, .step h2  {
+li h3, li h4  {
 	font-variant: normal;
 	font-size: 100%;
 	display: inline;
 }
 
-.step h1  {
-	width: 90px;
+li h3  {
+	width: 70%;
 }
 
-h2.distance {
+li h4 {
 	width: 20%;
 	float: right;
 	display: inline;
 }
 
-#directions div.step {
+#directions ol#steps li {
 	display: block;
 	border: 1px solid black;
 }
