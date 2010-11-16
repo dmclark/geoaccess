@@ -1,28 +1,24 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <b>Name:</b>
-  <%= @venue.name %>
-</p>
+<h1><%= @venue.name %></h1>
 
-<p>
-  <b>Address:</b>
-  <%= @venue.location %>
-</p>
-
-<p>
-  <b>Url:</b>
-  <%= autolink(@venue.url) %>
-</p>
-
-
-<p>
-  <b>Ventype:</b>
-  <%= @venue.ventype.name %>
-</p>
+<table summary="This table lists details about the venue" class="venuedata">
+<tbody><tr> 
+<th scope="row">Address:</th>
+<td><%= @venue.location %></td>
+</tr>
+<tr>
+<th scope="row">Url:</th>
+<td><%= autolink(@venue.url) %></td>
+</tr>
+<tr>
+<th>Ventype:</th>
+<td><%= @venue.ventype.name %></td>
+</tr>
+</tbody></table>
 
 
-<p>Description</p>
+<h2>Description</h2>
 <%= @venue.description %>
 
 
