@@ -10,27 +10,29 @@ margin:5px 0;
 	height: 400px;
 }
 
-li h3, li h4  {
-	font-variant: normal;
-	font-size: 100%;
-	display: inline;
+ol#steps h3, ol#steps h4, ol#steps p {
+       font-variant: normal;
+       font-size: 100%;
+       float:left;
 }
 
-li h3  {
-	width: 70%;
+ol#steps h3  {
+       width: 70%;
 }
 
-li h4 {
-	width: 20%;
-	float: right;
-	display: inline;
+ol#steps h4, ol#steps p {
+       width: 20%;
+       float: right;
+       text-align:right;
 }
 
-#directions ol#steps li {
-	display: block;
-	border: 1px solid black;
+ol#steps li {
+       float: left;
+       border-bottom: 1px solid #ccc;
+     width:100%;
+     padding:5px 0;
+     margin:5px 0;
 }
-
 
 
 form#tripPlan {
