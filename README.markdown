@@ -6,7 +6,7 @@ Prototype based on discussions on [http://tech.groups.yahoo.com/group/geoaccess/
 
 Accessibility information provided by [Easy access Chicago](http://easyaccesschicago.org/)
 
-Report submitted to the Whitehouse is on[[Wiki]]
+Report submitted to the Whitehouse is on [[Wiki]]
 
 ##Plans for phase 2
 
